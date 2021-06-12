@@ -87,9 +87,13 @@
 # Answer:
 # If one data type value is assigned to ‘a’ variable and then a different data type value is assigned to ‘a’ again, the value of ‘a’ will change to the latest value assigned to it. For example, if we write the following code:
 # a = 6
-# a = "hi"
+# a = float(6)
 # print(a)
-# The output would be the latest value assigned to ‘a’ which is “hi”.
+# The output would be the latest value assigned to ‘a’ which is 6.0.
+# Python is a interpreted language where the type of the variable is defined at the time of assignment and the value is adjusted accordingly.
+# In the above case even though, the integer value 6 was assigned after type conversion, the old value (6) is adjusted to 6.0 to show the type conversion.
+# Mathematically both are same.
+
 
 
     

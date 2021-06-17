@@ -71,3 +71,15 @@
 # Question 6: Define a function that can receive two integral numbers in string form and compute their sum and
 # print it in the console.
 # Answer: 
+# def calculate_sum(num1,num2):
+#     sum = int(num1) + int(num2)
+#     return sum
+
+# print(calculate_sum("4","3"))
+# Output: 7
+
+
+# Question 7: Define a function that can accept two strings as input and print the string with the maximum length
+# in the console. If two strings have the same length, then the function should print both the strings line
+# by line.
+# Answer: 

@@ -83,3 +83,117 @@
 # in the console. If two strings have the same length, then the function should print both the strings line
 # by line.
 # Answer: 
+# def string_length(str1, str2):
+#     if (len(str1) == len(str2)):
+#         print(str1)
+#         print(str2)
+
+#     elif (len(str1) < len(str2)):
+#         print(str2)
+
+#     else:
+#         print(str1)
+
+
+# str1 = input("Enter the First String: ")
+# str2 = input("Enter the Second String: ")
+
+# print("\n")
+
+# string_length(str1, str2)
+# Output: Enter the First String: hello hi this is me
+# Enter the Second String: hello hi this is me
+# hello hi this is me
+# hello hi this is me
+
+
+# Question 8: Define a function which can generate and print a tuple where the values are square of numbers
+# between 1 and 20 (both 1 and 20 included).
+# Answer:
+# def generateTuple():
+#     new_list = []
+#     for i in range(1,21):
+#         new_list.append(i**2)
+#         new_tuple = tuple(new_list)
+#     print(new_tuple)
+
+# generateTuple()
+# Output: (1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400)
+
+
+# Question 9: Write a function called showNumbers that takes a parameter called limit. It should print all the
+# numbers between 0 and limit with a label to identify the even and odd numbers.
+# Answer:
+# def showNumbers(limit):
+#     for i in range(limit+1):
+#         if i%2 == 0:
+#             print(i, end=" ")
+#             print("EVEN")
+#         else:
+#             print(i, end=" ")
+#             print("ODD")
+
+
+# print(showNumbers(3))
+# Output: 
+# 0 EVEN
+# 1 ODD
+# 2 EVEN
+# 3 ODD
+
+
+# Question 10: Write a program which uses filter() to make a list whose elements are even numbers between 1
+# and 20 (both included)
+# Answer:
+# list1 = range(1,21)
+# even_nums = lambda x: x%2 == 0
+# list2 = list(filter(even_nums, list1))
+# print(list2)
+# Output: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+
+
+# Question 11: Write a program which uses map() and filter() to make a list whose elements are squares of even
+# numbers in [1,2,3,4,5,6,7,8,9,10].
+# Answer: 
+# list1 = [1,2,3,4,5,6,7,8,9,10]
+# square_nums = lambda x: x**2
+# even_nums = lambda x: x%2 == 0
+# list2 = map(square_nums, filter(even_nums, list1))
+
+# print(list(list2))
+# Output: [4, 16, 36, 64, 100]
+
+
+# Question 12: Write a function to compute 5/0 and use try/except to catch the exceptions
+# Answer:
+# def division():
+#     return 5/0
+
+# try:
+#     division()
+# except ZeroDivisionError:
+#     print("Division by zero")
+# except Exception as e:
+#     print("Some other exception")
+# finally:
+#     print("In the finally block")
+# Output:
+# Division by zero
+# In the finally block
+
+
+# Question 13: Flatten the list [1,2,3,4,5,6,7] into 1234567 using reduce().
+# Answer: 
+# from functools import reduce
+
+# list1 = [1,2,3,4,5,6,7]
+# list_join = reduce(lambda a,b: 10*a+b, list1, 0)
+
+# print(list_join)
+# Output: 1234567
+
+
+# Question 14: Write a program in Python to find the values which are not divisible by 3 but are a multiple of 7.
+# Make sure to use only higher order functions.
+
+
